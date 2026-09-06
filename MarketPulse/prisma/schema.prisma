@@ -1,0 +1,56 @@
+generator client {
+  provider = "prisma-client-js"
+}
+datasource db {
+  provider = "postgresql"
+  url = env("DATABASE_URL")
+}
+
+model User {
+  id String @id @default(uuid())
+  name String
+  email String @unique
+  passwordHash String
+  createdAt DateTime @default(now())
+  watchlistStocks WatchlistStock[]
+  checkpoints UserCheckpoint[]
+}
+model WatchlistStock {
+  id String @id @default(uuid())
+  userId String
+  user User @relation(fields:[userId], references:[id], onDelete:Cascade)
+  symbol String
+  companyName String
+  priority Boolean @default(false)
+  addedAt DateTime @default(now())
+  @@unique([userId, symbol])
+}
+model MarketSnapshot {
+  id String @id @default(uuid())
+  symbol String
+  price Decimal
+  volume BigInt
+  timestamp DateTime
+  source String
+  status String
+}
+model UserCheckpoint {
+  id String @id @default(uuid())
+  userId String
+  user User @relation(fields:[userId], references:[id], onDelete:Cascade)
+  symbol String
+  price Decimal
+  volume BigInt
+  checkedAt DateTime @default(now())
+  @@index([userId, symbol, checkedAt])
+}
+model Event {
+  id String @id @default(uuid())
+  symbol String
+  type String
+  title String
+  description String
+  impactScore Int
+  timestamp DateTime
+  source String
+}

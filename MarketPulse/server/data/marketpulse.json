@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "id": "a202eb7a-af34-40d4-bcd4-73277f27c118",
+      "name": "Demo User",
+      "email": "demobc174548@example.com",
+      "passwordHash": "$2a$10$49DKcluiqwI8PHeoR8AFMOgY.dzsaDsaUC50SPvrqiwBd8nkKWLWS",
+      "createdAt": "2026-09-05T06:12:30.156Z"
+    },
+    {
+      "id": "e722671b-6daf-4493-a201-7ece9e1dc27e",
+      "name": "k",
+      "email": "rk@gmail.com",
+      "passwordHash": "$2a$10$4T/UVzG0YYLVdeV7ZvA41euZNigAqR88DZDXHzA8xPkM.QGODmN02",
+      "createdAt": "2026-09-05T06:18:01.513Z"
+    }
+  ],
+  "watchlistStocks": [
+    {
+      "id": "9ca6e3a8-4fe5-4c09-9cb6-3edd5a4f2a3f",
+      "userId": "a202eb7a-af34-40d4-bcd4-73277f27c118",
+      "symbol": "NVDA",
+      "companyName": "NVIDIA Corporation",
+      "priority": false,
+      "addedAt": "2026-09-05T06:12:30.214Z"
+    },
+    {
+      "id": "8a90903e-0c99-4cab-90c5-0fb1d8728a4a",
+      "userId": "e722671b-6daf-4493-a201-7ece9e1dc27e",
+      "symbol": "NVDA",
+      "companyName": "NVIDIA Corporation",
+      "priority": false,
+      "addedAt": "2026-09-05T06:18:32.218Z"
+    },
+    {
+      "id": "5c535f05-43a0-414e-a6fa-4f6c196af905",
+      "userId": "e722671b-6daf-4493-a201-7ece9e1dc27e",
+      "symbol": "AMZN",
+      "companyName": "Amazon.com, Inc.",
+      "priority": false,
+      "addedAt": "2026-09-05T06:19:07.167Z"
+    },
+    {
+      "id": "97d9a3e5-0f84-493b-9d77-601272d4a422",
+      "userId": "e722671b-6daf-4493-a201-7ece9e1dc27e",
+      "symbol": "AAPL",
+      "companyName": "Apple Inc.",
+      "priority": false,
+      "addedAt": "2026-09-05T06:19:30.186Z"
+    },
+    {
+      "id": "6a14a05b-935e-4775-80a5-948d2b392e70",
+      "userId": "e722671b-6daf-4493-a201-7ece9e1dc27e",
+      "symbol": "MSFT",
+      "companyName": "Microsoft Corporation",
+      "priority": false,
+      "addedAt": "2026-09-05T06:19:50.302Z"
+    },
+    {
+      "id": "c11c7e36-086d-4b04-9cde-ec70e2cd6da9",
+      "userId": "e722671b-6daf-4493-a201-7ece9e1dc27e",
+      "symbol": "TSLA",
+      "companyName": "Tesla, Inc.",
+      "priority": false,
+      "addedAt": "2026-09-05T06:19:59.762Z"
+    }
+  ],
+  "checkpoints": [
+    {
+      "userId": "a202eb7a-af34-40d4-bcd4-73277f27c118",
+      "symbol": "NVDA",
+      "price": 188.77,
+      "volume": 42120000,
+      "checkedAt": "2026-09-05T06:12:30.267Z"
+    }
+  ],
+  "scenarios": {
+    "a202eb7a-af34-40d4-bcd4-73277f27c118": "fall",
+    "e722671b-6daf-4493-a201-7ece9e1dc27e": "rise"
+  },
+  "alerts": [],
+  "holdings": [],
+  "preferences": {}
+}
