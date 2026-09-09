@@ -22,7 +22,8 @@ app.use((req, res, next) => {
     next();
 });
 app.get('/api/portfolio', requireAuth, account.getPortfolio); app.post('/api/portfolio', requireAuth, account.addHolding); app.route('/api/preferences').get(requireAuth, account.preferences).patch(requireAuth, account.preferences);
-app.use((err, _, res, __) => { console.error(err); res.status(500).json({ error: 'Something went wrong. Please try again.' }); }); app.listen(process.env.PORT || 3001, () => console.log('MarketPulse API running on port 3001'));
+app.use((err, _, res, __) => { console.error(err); res.status(500).json({ error: 'Something went wrong. Please try again.' }); });
+
 app.listen(process.env.PORT || 3001, () => {
     console.log(`MarketPulse API running on port ${process.env.PORT || 3001}`);
 });
