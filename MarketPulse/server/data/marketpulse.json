@@ -13,6 +13,13 @@
       "email": "rk@gmail.com",
       "passwordHash": "$2a$10$4T/UVzG0YYLVdeV7ZvA41euZNigAqR88DZDXHzA8xPkM.QGODmN02",
       "createdAt": "2026-09-05T06:18:01.513Z"
+    },
+    {
+      "id": "1d7bfee1-367f-4b53-8257-721e7500265b",
+      "name": "Test",
+      "email": "test_user_check@example.com",
+      "passwordHash": "$2a$10$NvKekj8FfaDqeIEcxhnFHeHWlwZ.9ycnFfTi1eLGb2GetaaDKamZK",
+      "createdAt": "2026-09-09T17:52:28.511Z"
     }
   ],
   "watchlistStocks": [
@@ -76,7 +83,7 @@
   ],
   "scenarios": {
     "a202eb7a-af34-40d4-bcd4-73277f27c118": "fall",
-    "e722671b-6daf-4493-a201-7ece9e1dc27e": "rise"
+    "e722671b-6daf-4493-a201-7ece9e1dc27e": "calm"
   },
   "alerts": [],
   "holdings": [],
